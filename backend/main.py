@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.ai_image import gemini
+from backend.ai_bots import gemini
 from pydantic import BaseModel
 
 app = FastAPI()
