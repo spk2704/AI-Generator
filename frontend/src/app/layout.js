@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "AI Generator",
-  description: "AI that generates images/videos/voice",
+  title: "AI Bots",
+  description: "AI that creates twitch bots",
 };
 
 export default function RootLayout({ children }) {

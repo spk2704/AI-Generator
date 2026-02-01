@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950 px-6 py-10">
       <div className="text-center space-y-3">
-        <div className="text-4xl font-bold text-white tracking-tight">AI Generator</div>
+        <div className="text-4xl font-bold text-white tracking-tight">AI Bots</div>
       </div>
 
       <div className="flex items-center justify-center">
