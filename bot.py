@@ -8,17 +8,16 @@ import time
 driver = webdriver.Chrome()
 driver.get("https://monkeytype.com")
 
-time.sleep(2)
+time.sleep(5)
 
-timer = 0
+textarea = driver.find_element(By.XPATH, "//textarea[@id='wordsInput']")
 
-while timer < 30:
-    timer+=1
-    textarea = driver.find_element(By.XPATH, "//textarea[@id='wordsInput']")
-    raw_words = driver.find_element(By.ID, "words")
-    words = raw_words.text.split()
+raw_words_first = driver.find_element(By.ID, "words")
 
-    for word in words:
-        textarea.send_keys(word + " ")
+words_first = raw_words_first.text.split()
 
-time.sleep(10)
+for word in words_first:
+    textarea.send_keys(word + " ")
+    time.sleep(0.3)
+
+time.sleep(120)
